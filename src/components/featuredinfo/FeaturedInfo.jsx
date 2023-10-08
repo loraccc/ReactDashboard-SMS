@@ -10,7 +10,7 @@ function Featuredinfo() {
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">$2455</span>
           <span className="featuredMoneyRate">
-            -2.45 <ArrowDownwardIcon />
+            -2.45 <ArrowDownwardIcon className="featuredIcon negative" />
           </span>
         </div>
         <span className="featureSub">Compared to last Month</span>
@@ -20,7 +20,7 @@ function Featuredinfo() {
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">$245</span>
           <span className="featuredMoneyRate">
-            -1.45 <ArrowDownwardIcon />
+            -1.45 <ArrowDownwardIcon className="featuredIcon negative" />
           </span>
         </div>
         <span className="featureSub">Compared to last Month</span>
@@ -30,7 +30,7 @@ function Featuredinfo() {
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">$5545</span>
           <span className="featuredMoneyRate">
-            + 2.45 <ArrowUpwardIcon />
+            + 2.45 <ArrowUpwardIcon className="featuredIcon" />
           </span>
         </div>
         <span className="featureSub">Compared to last Month</span>
