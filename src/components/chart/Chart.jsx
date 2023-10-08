@@ -1,50 +1,80 @@
 import React from "react";
 import "../chart/chart.css";
 
-import { LineChart, Line, XAxis, ResponsiveContainer } from "recharts";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  ResponsiveContainer,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+} from "recharts";
 
 const data = [
   {
-    name: "Page A",
+    name: "JAN",
     activeUser: 4000,
-    pv: 2400,
-    amt: 2400,
   },
   {
-    name: "Page B",
+    name: "JAN",
+    activeUser: 4000,
+  },
+  {
+    name: "JAN",
+    activeUser: 4000,
+  },
+  {
+    name: "JAN",
+    activeUser: 4000,
+  },
+  {
+    name: "JAN",
     activeUser: 3000,
-    pv: 1398,
-    amt: 2210,
   },
   {
-    name: "Page C",
+    name: "FEB",
+    activeUser: 4100,
+  },
+  {
+    name: "MAR",
+    activeUser: 4000,
+  },
+  {
+    name: "APR",
+    activeUser: 4000,
+  },
+  {
+    name: "MAY",
+    activeUser: 4000,
+  },
+  {
+    name: "JUN",
+    activeUser: 3300,
+  },
+  {
+    name: "JUL",
+    activeUser: 2200,
+  },
+  {
+    name: "AUG",
+    activeUser: 1100,
+  },
+  {
+    name: "SEP",
+    activeUser: 1000,
+  },
+  {
+    name: "OCT",
+    activeUser: 1300,
+  },
+  {
+    name: "NOV",
+    activeUser: 2800,
+  },
+  {
+    name: "DEC",
     activeUser: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: "Page D",
-    activeUser: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: "Page E",
-    activeUser: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "Page F",
-    activeUser: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    activeUser: 3490,
-    pv: 4300,
-    amt: 2100,
   },
 ];
 
@@ -55,7 +85,10 @@ function Chart() {
       <ResponsiveContainer width="100%" aspect={4 / 1}>
         <LineChart data={data}>
           <XAxis dataKey="name" stroke="#5550bd" />
-          <Line type="monotone" dataKey="activeUser" stroke="#5550bd" />
+          <Line type="monotone" dataKey="activeUser" stroke="#5550bd" />{" "}
+          {/* the active user and name is from data above */}
+          <Tooltip />
+          <CartesianGrid stroke="#e0dfdf" strokeDasharray="5 5" />
         </LineChart>
       </ResponsiveContainer>
     </div>
